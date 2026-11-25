@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kiskeszkenő – Magyar akác inspirálta kozmetikai termékcsalád</title>
+  <meta name="description" content="Magyar akác inspirálta kozmetikai termékcsalád.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Pinyon+Script&family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <noscript><style>.loader { display: none !important; } body.is-loading { overflow: auto !important; }</style></noscript>
+</head>
+<body class="is-loading">
+
+  <!-- Betöltő képernyő: a felirat "kézírással" kiíródik, utána megjelenik az oldal -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-ink">Kiskeszkenő</span>
+      <span class="loader-sub">
+        <span lang="hu">MAGYAR AKÁC KOZMETIKAI TERMÉKCSALÁD</span>
+        <span lang="en">HUNGARIAN ACACIA COSMETIC PRODUCT FAMILY</span>
+      </span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Switch to English">ENG</button>
+    <div class="header-inner">
+      <div class="brand">
+        <img class="leaf leaf-left" src="levelkek.png" alt="" width="417" height="335">
+        <a class="logo" href="#" aria-label="Kiskeszkenő">Kiskeszkenő</a>
+        <img class="leaf leaf-right" src="levelkek.png" alt="" width="417" height="335">
+      </div>
+    </div>
+  </header>
+
+  <section class="intro">
+    <div class="intro-card">
+      <p id="fulszoveg">
+        <span lang="hu">A Kiskeszkenő hajápoló termékcsalád a magyar akác – hungarikumként is számon tartott fa – virágából és fájából merít ihletet. A sampon, a balzsam, a hajolaj és a hajpakolás a haj természetes ápolását szolgálja, az akácfa fésű pedig kíméletesen bontja ki a gubancokat. A termékcsalád csomagolásának mintájában visszaköszönnek a magyar népi kultúrában használt hímzés motívumok. Termékcsaládunk nevét is a magyar hagyományokban használatos keszkenő kendő ihlette.</span>
+        <span lang="en">The Kiskeszkenő hair care product family draws its inspiration from the flowers and wood of the Hungarian acacia – a tree also regarded as a Hungarikum. The shampoo, conditioner, hair oil and hair mask are designed for the natural care of hair, while the acacia wood comb gently detangles knots. The pattern on the packaging echoes embroidery motifs from Hungarian folk culture. The name of our product family was also inspired by the keszkenő, a kerchief used in Hungarian traditions.</span>
+      </p>
+    </div>
+  </section>
+
+  <!--
+    Képek a nagy kártyában:
+    A data-images attribútumba vesszővel elválasztva írhatsz képfájlokat
+    (pl. data-images="kepek/sampon-1.jpg,kepek/sampon-2.jpg"). Ha több van, lapozható.
+    Ha nincs megadva, a kártya saját textúrája látszik. A "tex-speckle", "tex-burst",
+    "tex-teal" a CSS-ben lévő textúrák nevei – ezek helyettesítik a képet addig, amíg nincs fotó.
+
+    Nyelvek: minden szövegnek van egy lang="hu" és egy lang="en" változata,
+    az oldal mindig csak az aktuális nyelvűt mutatja.
+  -->
+  <main id="termekek" class="products">
+    <div class="grid">
+
+      <!-- 1. Sampon -->
+      <article class="card" data-images="tex-speckle,tex-burst,tex-teal">
+        <div class="card-img tex-speckle" role="img" data-aria-hu="Világoszöld mintázat" data-aria-en="Light green pattern"></div>
+        <div class="card-body">
+          <h2><span lang="hu">Magyar akác sampon</span><span lang="en">Hungarian acacia shampoo</span></h2>
+          <p class="preview">
+            <span lang="hu">Magyar akácvirág-kivonattal készült, növényi eredetű tisztító összetevőket tartalmazó sampon a haj és a fejbőr mindennapi tisztítására.</span>
+            <span lang="en">Shampoo made with Hungarian acacia flower extract and plant-derived cleansing ingredients, for the everyday cleansing of hair and scalp.</span>
+          </p>
+          <button class="more" type="button"><span lang="hu">Több…</span><span lang="en">More…</span></button>
+          <template class="extra">
+            <div lang="hu">
+              <h3>Használat</h3>
+              <p>Vigye fel a nedves hajra és gyengéden masszírozza be a fejbőrbe, majd alaposan öblítse le.</p>
+              <h3>Figyelmeztetés</h3>
+              <p>Szembe ne kerüljön. Szembe jutás esetén bő vízzel öblítse ki.</p>
+              <h3>Összetétel</h3>
+              <p>Magyar akácvirág-kivonat (<i>Robinia pseudoacacia</i>) 1%.</p>
+              <h3>Ingredients</h3>
+              <p>Aqua, Sodium Coco-Sulfate, Cocamidopropyl Betaine, Coco-Glucoside, Glycerin, Sodium Chloride, Robinia Pseudoacacia Flower Extract, Citric Acid, Sodium Benzoate, Potassium Sorbate, Parfum.</p>
+              <h3>Névleges mennyiség</h3>
+              <p>200 ml</p>
+              <h3>Egyéb információk</h3>
+              <dl>
+                <dt>Származási hely:</dt> <dd>Magyarország</dd>
+                <dt>Gyártás helye:</dt> <dd>Magyarország</dd>
+                <dt>Felelős személy:</dt> <dd>Kiskeszkenő Kozmetikum Kft.</dd>
+                <dt>Cím:</dt> <dd>1034 Budapest, Doberdó út 6.</dd>
+                <dt>Tételszám:</dt> <dd>MA-S-26001</dd>
+                <dt>Felbontás után felhasználható:</dt> <dd>12 hónap (12M)</dd>
+              </dl>
+            </div>
+            <div lang="en">
+              <h3>Usage</h3>
+              <p>Apply to wet hair and gently massage into the scalp, then rinse thoroughly.</p>
+              <h3>Warning</h3>
+              <p>Avoid contact with eyes. In case of contact with eyes, rinse thoroughly with plenty of water.</p>
+              <h3>Composition</h3>
+              <p>Hungarian acacia flower extract (<i>Robinia pseudoacacia</i>) 1%.</p>
+              <h3>Ingredients</h3>
+              <p>Aqua, Sodium Coco-Sulfate, Cocamidopropyl Betaine, Coco-Glucoside, Glycerin, Sodium Chloride, Robinia Pseudoacacia Flower Extract, Citric Acid, Sodium Benzoate, Potassium Sorbate, Parfum.</p>
+              <h3>Nominal quantity</h3>
+              <p>200 ml</p>
+              <h3>Other information</h3>
+              <dl>
+                <dt>Place of origin:</dt> <dd>Hungary</dd>
+                <dt>Place of manufacture:</dt> <dd>Hungary</dd>
+                <dt>Responsible person:</dt> <dd>Kiskeszkenő Kozmetikum Kft.</dd>
+                <dt>Address:</dt> <dd>Doberdó út 6., 1034 Budapest, Hungary</dd>
+                <dt>Batch number:</dt> <dd>MA-S-26001</dd>
+                <dt>Use within after opening:</dt> <dd>12 months (12M)</dd>
+              </dl>
+            </div>
+          </template>
+        </div>
+      </article>
+
+      <!-- 2. Hajbalzsam -->
+      <article class="card" data-images="tex-burst">
+        <div class="card-img tex-burst" role="img" data-aria-hu="Bézs-zöld mintázat" data-aria-en="Beige and green pattern"></div>
+        <div class="card-body">
+          <h2><span lang="hu">Magyar akác hajbalzsam</span><span lang="en">Hungarian acacia conditioner</span></h2>
+          <p class="preview">
+            <span lang="hu">Magyar akácvirág-kivonattal és kondicionáló összetevőkkel készült hajbalzsam a haj puhaságáért és könnyebb kifésülhetőségéért.</span>
+            <span lang="en">Conditioner made with Hungarian acacia flower extract and conditioning ingredients, for soft hair that is easier to comb.</span>
+          </p>
+          <button class="more" type="button"><span lang="hu">Több…</span><span lang="en">More…</span></button>
+          <template class="extra">
+            <div lang="hu">
+              <h3>Használat</h3>
+              <p>Hajmosás után oszlassa el a nedves haj hosszán és hajvégein. Hagyja hatni 2–3 percig, majd alaposan öblítse ki.</p>
+              <h3>Figyelmeztetés</h3>
+              <p>Szembe ne kerüljön. Szembe jutás esetén bő vízzel öblítse ki.</p>
+              <h3>Összetétel</h3>
+              <p>Magyar akácvirág-kivonat (<i>Robinia pseudoacacia</i>) 1%.</p>
+              <h3>Ingredients</h3>
+              <p>Aqua, Cetearyl Alcohol, Behentrimonium Chloride, Glycerin, Cetyl Alcohol, Coco-Caprylate/Caprate, Panthenol, Robinia Pseudoacacia Flower Extract, Lactic Acid, Sodium Benzoate, Potassium Sorbate, Parfum.</p>
+              <h3>Névleges mennyiség</h3>
+              <p>200 ml</p>
+              <h3>Egyéb információk</h3>
+              <dl>
+                <dt>Származási hely:</dt> <dd>Magyarország</dd>
+                <dt>Gyártás helye:</dt> <dd>Magyarország</dd>
+                <dt>Felelős személy:</dt> <dd>Kiskeszkenő Kozmetikum Kft.</dd>
+                <dt>Cím:</dt> <dd>1034 Budapest, Doberdó út 6.</dd>
+                <dt>Tételszám:</dt> <dd>MA-B-26001</dd>
+                <dt>Felbontás után felhasználható:</dt> <dd>12 hónap (12M)</dd>
+              </dl>
+            </div>
+            <div lang="en">
+              <h3>Usage</h3>
+              <p>After shampooing, distribute through the lengths and ends of wet hair. Leave on for 2–3 minutes, then rinse out thoroughly.</p>
+              <h3>Warning</h3>
+              <p>Avoid contact with eyes. In case of contact with eyes, rinse thoroughly with plenty of water.</p>
+              <h3>Composition</h3>
+              <p>Hungarian acacia flower extract (<i>Robinia pseudoacacia</i>) 1%.</p>
+              <h3>Ingredients</h3>
+              <p>Aqua, Cetearyl Alcohol, Behentrimonium Chloride, Glycerin, Cetyl Alcohol, Coco-Caprylate/Caprate, Panthenol, Robinia Pseudoacacia Flower Extract, Lactic Acid, Sodium Benzoate, Potassium Sorbate, Parfum.</p>
+              <h3>Nominal quantity</h3>
+              <p>200 ml</p>
+              <h3>Other information</h3>
+              <dl>
+                <dt>Place of origin:</dt> <dd>Hungary</dd>
+                <dt>Place of manufacture:</dt> <dd>Hungary</dd>
+                <dt>Responsible person:</dt> <dd>Kiskeszkenő Kozmetikum Kft.</dd>
+                <dt>Address:</dt> <dd>Doberdó út 6., 1034 Budapest, Hungary</dd>
+                <dt>Batch number:</dt> <dd>MA-B-26001</dd>
+                <dt>Use within after opening:</dt> <dd>12 months (12M)</dd>
+              </dl>
+            </div>
+          </template>
+        </div>
+      </article>
+
+      <!-- 3. Hajápoló olaj -->
+      <article class="card" data-images="tex-teal">
+        <div class="card-img tex-teal" role="img" data-aria-hu="Pasztellzöld színátmenet" data-aria-en="Pastel green gradient"></div>
+        <div class="card-body">
+          <h2><span lang="hu">Magyar akác hajápoló olaj</span><span lang="en">Hungarian acacia hair care oil</span></h2>
+          <p class="preview">
+            <span lang="hu">Növényi olajokkal és magyar akácvirág-kivonattal készült hajápoló olaj a hajhossz és a hajvégek ápolására.</span>
+            <span lang="en">Hair care oil made with plant oils and Hungarian acacia flower extract, for caring for the lengths and ends of the hair.</span>
+          </p>
+          <button class="more" type="button"><span lang="hu">Több…</span><span lang="en">More…</span></button>
+          <template class="extra">
+            <div lang="hu">
+              <h3>Használat</h3>
+              <p>Kis mennyiséget oszlassa el a száraz vagy nedves haj hosszán és hajvégein. Nem szükséges kiöblíteni.</p>
+              <h3>Figyelmeztetés</h3>
+              <p>Szembe ne kerüljön. Gyermekektől elzárva tartandó.</p>
+              <h3>Összetétel</h3>
+              <p>Magyar akácvirág-kivonat (<i>Robinia pseudoacacia</i>) 1%.</p>
+              <h3>Ingredients</h3>
+              <p>Helianthus Annuus Seed Oil, Caprylic/Capric Triglyceride, Simmondsia Chinensis Seed Oil, Argania Spinosa Kernel Oil, Coco-Caprylate/Caprate, Robinia Pseudoacacia Flower Extract, Tocopherol, Parfum.</p>
+              <h3>Névleges mennyiség</h3>
+              <p>50 ml</p>
+              <h3>Egyéb információk</h3>
+              <dl>
+                <dt>Származási hely:</dt> <dd>Magyarország</dd>
+                <dt>Gyártás helye:</dt> <dd>Magyarország</dd>
+                <dt>Felelős személy:</dt> <dd>Kiskeszkenő Kozmetikum Kft.</dd>
+                <dt>Cím:</dt> <dd>1034 Budapest, Doberdó út 6.</dd>
+                <dt>Tételszám:</dt> <dd>MA-O-26001</dd>
+                <dt>Felbontás után felhasználható:</dt> <dd>12 hónap (12M)</dd>
+              </dl>
+            </div>
+            <div lang="en">
+              <h3>Usage</h3>
+              <p>Distribute a small amount through the lengths and ends of dry or damp hair. No need to rinse out.</p>
+              <h3>Warning</h3>
+              <p>Avoid contact with eyes. Keep out of reach of children.</p>
+              <h3>Composition</h3>
+              <p>Hungarian acacia flower extract (<i>Robinia pseudoacacia</i>) 1%.</p>
+              <h3>Ingredients</h3>
+              <p>Helianthus Annuus Seed Oil, Caprylic/Capric Triglyceride, Simmondsia Chinensis Seed Oil, Argania Spinosa Kernel Oil, Coco-Caprylate/Caprate, Robinia Pseudoacacia Flower Extract, Tocopherol, Parfum.</p>
+              <h3>Nominal quantity</h3>
+              <p>50 ml</p>
+              <h3>Other information</h3>
+              <dl>
+                <dt>Place of origin:</dt> <dd>Hungary</dd>
+                <dt>Place of manufacture:</dt> <dd>Hungary</dd>
+                <dt>Responsible person:</dt> <dd>Kiskeszkenő Kozmetikum Kft.</dd>
+                <dt>Address:</dt> <dd>Doberdó út 6., 1034 Budapest, Hungary</dd>
+                <dt>Batch number:</dt> <dd>MA-O-26001</dd>
+                <dt>Use within after opening:</dt> <dd>12 months (12M)</dd>
+              </dl>
+            </div>
+          </template>
+        </div>
+      </article>
+
+      <!-- 4. Hajpakolás -->
+      <article class="card" data-images="tex-speckle">
+        <div class="card-img tex-speckle" role="img" data-aria-hu="Világoszöld mintázat" data-aria-en="Light green pattern"></div>
+        <div class="card-body">
+          <h2><span lang="hu">Magyar akác hajpakolás</span><span lang="en">Hungarian acacia hair mask</span></h2>
+          <p class="preview">
+            <span lang="hu">Magyar akácvirág-kivonattal és tápláló, kondicionáló összetevőkkel készült hajpakolás a haj puhaságáért, selymes tapintásáért és könnyebb kifésülhetőségéért.</span>
+            <span lang="en">Hair mask made with Hungarian acacia flower extract and nourishing, conditioning ingredients, for soft, silky hair that is easier to comb.</span>
+          </p>
+          <button class="more" type="button"><span lang="hu">Több…</span><span lang="en">More…</span></button>
+          <template class="extra">
+            <div lang="hu">
+              <h3>Használat</h3>
+              <p>Hajmosás után oszlassa el egyenletesen a nedves hajon. Hagyja hatni 5–10 percig, majd alaposan öblítse ki.</p>
+              <h3>Ingredients</h3>
+              <p>Aqua, Cetearyl Alcohol, Glycerin, Cetrimonium Chloride, Robinia Pseudoacacia Flower Extract, Hydrolyzed Wheat Protein, Panthenol, Argania Spinosa Kernel Oil, Citric Acid, Phenoxyethanol, Parfum.</p>
+              <h3>Névleges mennyiség</h3>
+              <p>11 x 10 ml</p>
+              <h3>Egyéb információk</h3>
+              <dl>
+                <dt>Származási hely:</dt> <dd>Magyarország</dd>
+                <dt>Gyártás helye:</dt> <dd>Magyarország</dd>
+                <dt>Felelős személy:</dt> <dd>Kiskeszkenő Kozmetikum Kft.</dd>
+                <dt>Cím:</dt> <dd>1034 Budapest, Doberdó út 6.</dd>
+                <dt>Tételszám:</dt> <dd>MA-HP-26001</dd>
+                <dt>Felbontás után felhasználható:</dt> <dd>12 hónap (12M)</dd>
+              </dl>
+            </div>
+            <div lang="en">
+              <h3>Usage</h3>
+              <p>After shampooing, spread evenly through wet hair. Leave on for 5–10 minutes, then rinse out thoroughly.</p>
+              <h3>Ingredients</h3>
+              <p>Aqua, Cetearyl Alcohol, Glycerin, Cetrimonium Chloride, Robinia Pseudoacacia Flower Extract, Hydrolyzed Wheat Protein, Panthenol, Argania Spinosa Kernel Oil, Citric Acid, Phenoxyethanol, Parfum.</p>
+              <h3>Nominal quantity</h3>
+              <p>11 x 10 ml</p>
+              <h3>Other information</h3>
+              <dl>
+                <dt>Place of origin:</dt> <dd>Hungary</dd>
+                <dt>Place of manufacture:</dt> <dd>Hungary</dd>
+                <dt>Responsible person:</dt> <dd>Kiskeszkenő Kozmetikum Kft.</dd>
+                <dt>Address:</dt> <dd>Doberdó út 6., 1034 Budapest, Hungary</dd>
+                <dt>Batch number:</dt> <dd>MA-HP-26001</dd>
+                <dt>Use within after opening:</dt> <dd>12 months (12M)</dd>
+              </dl>
+            </div>
+          </template>
+        </div>
+      </article>
+
+      <!-- 5. Fésű -->
+      <article class="card" data-images="tex-burst">
+        <div class="card-img tex-burst" role="img" data-aria-hu="Bézs-zöld mintázat" data-aria-en="Beige and green pattern"></div>
+        <div class="card-body">
+          <h2><span lang="hu">Magyar akácfa fésű</span><span lang="en">Hungarian acacia wood comb</span></h2>
+          <p class="preview">
+            <span lang="hu">Természetes, magyar akácfából készült fésű a haj kíméletes kibontásáért, húzás és gubancolódás nélkül.</span>
+            <span lang="en">Comb made of natural Hungarian acacia wood for gently detangling hair, without pulling or knotting.</span>
+          </p>
+          <button class="more" type="button"><span lang="hu">Több…</span><span lang="en">More…</span></button>
+          <template class="extra">
+            <div lang="hu">
+              <h3>Ápolás</h3>
+              <p>Használat után törölje át enyhén nedves ruhával, majd szárítsa meg. Ne áztassa vízben.</p>
+              <h3>Anyag</h3>
+              <p>100% magyar akácfa (természetes olajjal kezelve).</p>
+              <h3>Materials</h3>
+              <p>Hungarian acacia wood (natural oil finish)</p>
+              <h3>Egyéb információk</h3>
+              <dl>
+                <dt>Származási hely:</dt> <dd>Magyarország</dd>
+                <dt>Gyártás helye:</dt> <dd>Magyarország</dd>
+                <dt>Felelős személy:</dt> <dd>Kiskeszkenő Kozmetikum Kft.</dd>
+                <dt>Cím:</dt> <dd>1034 Budapest, Doberdó út 6.</dd>
+                <dt>Tételszám:</dt> <dd>MA-F-26001</dd>
+              </dl>
+            </div>
+            <div lang="en">
+              <h3>Care</h3>
+              <p>After use, wipe with a slightly damp cloth, then dry. Do not soak in water.</p>
+              <h3>Material</h3>
+              <p>100% Hungarian acacia wood (treated with natural oil).</p>
+              <h3>Other information</h3>
+              <dl>
+                <dt>Place of origin:</dt> <dd>Hungary</dd>
+                <dt>Place of manufacture:</dt> <dd>Hungary</dd>
+                <dt>Responsible person:</dt> <dd>Kiskeszkenő Kozmetikum Kft.</dd>
+                <dt>Address:</dt> <dd>Doberdó út 6., 1034 Budapest, Hungary</dd>
+                <dt>Batch number:</dt> <dd>MA-F-26001</dd>
+              </dl>
+            </div>
+          </template>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer id="informaciok" class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-title">
+          <img class="leaf leaf-left" src="levelkek.png" alt="" width="417" height="335">
+          <span class="logo logo-footer">Kiskeszkenő</span>
+          <img class="leaf leaf-right" src="levelkek.png" alt="" width="417" height="335">
+        </div>
+        <p>
+          <span lang="hu">Magyar akác inspirálta kozmetikai termékcsalád.</span>
+          <span lang="en">A cosmetic product family inspired by the Hungarian acacia.</span>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3><span lang="hu">Készítők</span><span lang="en">Creators</span></h3>
+        <ul>
+          <li>Balatoni Kitti</li>
+          <li>Debreczeni Viktória</li>
+          <li>Móricz Hanna</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3><span lang="hu">Tárgy</span><span lang="en">Course</span></h3>
+        <ul>
+          <li>
+            <span lang="hu">Integrált Terméktervezés II:<br>Hungarikum termékcsalád feladat</span>
+            <span lang="en">Integrated Product Design II:<br>Hungarikum product family assignment</span>
+          </li>
+          <li><span lang="hu">2026/27/1 félév</span><span lang="en">Semester 2026/27/1</span></li>
+          <li>2026.12.01.</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Nagy kártya (modal) -->
+  <div class="overlay" id="overlay" hidden>
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="m-title">
+      <button class="modal-close" id="m-close" type="button" aria-label="Bezárás">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="modal-scroll">
+        <div class="gallery" id="m-gallery">
+          <div class="stage" id="m-stage"></div>
+          <button class="nav-btn nav-prev" id="m-prev" type="button" aria-label="Előző kép">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+          </button>
+          <button class="nav-btn nav-next" id="m-next" type="button" aria-label="Következő kép">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
+          </button>
+          <div class="dots" id="m-dots"></div>
+        </div>
+        <div class="modal-body">
+          <h2 id="m-title"></h2>
+          <p id="m-text"></p>
+          <div id="m-extra"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      /* =====================================================
+         Betöltő képernyő
+         ===================================================== */
+      var loader = document.getElementById('loader');
+      var ink = loader.querySelector('.loader-ink');
+      var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var loaderDone = false;
+
+      function finishLoader() {
+        if (loaderDone) return;
+        loaderDone = true;
+        loader.classList.add('is-done');
+        document.body.classList.remove('is-loading');
+        setTimeout(function () {
+          if (loader.parentNode) loader.parentNode.removeChild(loader);
+        }, 1000);
+      }
+
+      // A felirat egy keskeny, a betűk dőlésszögével megegyező élű maszkkal íródik ki.
+      // A tollmozgást a --p érték képkockánkénti léptetése adja: lassan indul,
+      // a végén lelassul, közben enyhén ingadozik a sebesség, mint a valódi írásnál.
+      var WRITE_MS = 4200;
+      var P_END = 106;     // % – ennél a értéknél a felirat teljesen látszik
+
+      function writeOn(done) {
+        var t0 = null, last = 0;
+        function frame(now) {
+          if (t0 === null) t0 = now;
+          var t = Math.min(1, (now - t0) / WRITE_MS);
+          var base = (1 - Math.cos(Math.PI * t)) / 2;                       // lágy indulás és lassulás
+          var wobble = 0.014 * Math.sin(Math.PI * t) * Math.sin(2 * Math.PI * 9 * t);
+          var p = Math.max(last, Math.min(1, base + wobble));               // sosem megy visszafelé
+          last = p;
+          ink.style.setProperty('--p', (t >= 1 ? P_END : p * P_END).toFixed(2) + '%');
+          if (t < 1) requestAnimationFrame(frame); else done();
+        }
+        requestAnimationFrame(frame);
+      }
+
+      function startWriting() {
+        if (reduceMotion) {
+          loader.classList.add('is-static', 'is-subtitle');
+          setTimeout(finishLoader, 900);
+          return;
+        }
+        writeOn(function () {
+          loader.classList.add('is-subtitle');        // alcím finoman megjelenik
+          setTimeout(finishLoader, 1900);             // kis szünet, hogy a kész felirat látszódjon
+        });
+      }
+
+      // a betűtípus betöltése után indul, hogy ne villanjon be tartalék betűtípus
+      var fontReady = (document.fonts && document.fonts.load)
+        ? Promise.race([
+            document.fonts.load('4rem "Pinyon Script"', 'Kiskeszkenő'),
+            new Promise(function (res) { setTimeout(res, 1800); })
+          ])
+        : Promise.resolve();
+      fontReady.then(startWriting, startWriting);
+
+      // biztonsági tartalék: semmiképp ne ragadjon be a betöltő
+      setTimeout(finishLoader, 10000);
+
+      /* =====================================================
+         Nyelvváltás (HU / EN)
+         ===================================================== */
+      var lang = 'hu';
+      var STR = {
+        hu: {
+          title: 'Kiskeszkenő – Magyar akác inspirálta kozmetikai termékcsalád',
+          desc: 'Magyar akác inspirálta kozmetikai termékcsalád.',
+          toggle: 'ENG',
+          toggleLabel: 'Switch to English',
+          close: 'Bezárás',
+          prev: 'Előző kép',
+          next: 'Következő kép',
+          dot: function (n) { return n + '. kép'; }
+        },
+        en: {
+          title: 'Kiskeszkenő – A cosmetic product family inspired by the Hungarian acacia',
+          desc: 'A cosmetic product family inspired by the Hungarian acacia.',
+          toggle: 'HUN',
+          toggleLabel: 'Váltás magyar nyelvre',
+          close: 'Close',
+          prev: 'Previous image',
+          next: 'Next image',
+          dot: function (n) { return 'Image ' + n; }
+        }
+      };
+
+      var overlay = document.getElementById('overlay');
+      var modal = document.getElementById('modal');
+      var stage = document.getElementById('m-stage');
+      var gallery = document.getElementById('m-gallery');
+      var dotsBox = document.getElementById('m-dots');
+      var titleEl = document.getElementById('m-title');
+      var textEl = document.getElementById('m-text');
+      var extraEl = document.getElementById('m-extra');
+      var closeBtn = document.getElementById('m-close');
+      var prevBtn = document.getElementById('m-prev');
+      var nextBtn = document.getElementById('m-next');
+      var langBtn = document.getElementById('lang-toggle');
+
+      var current = null;      // the card that is open
+      var trigger = null;      // the button that opened it
+      var slides = [];
+      var dots = [];
+      var index = 0;
+      var closing = false;
+
+      function setLang(l) {
+        lang = (l === 'en') ? 'en' : 'hu';
+        var s = STR[lang];
+        document.documentElement.lang = lang;
+        document.title = s.title;
+        var meta = document.querySelector('meta[name="description"]');
+        if (meta) meta.setAttribute('content', s.desc);
+
+        langBtn.textContent = s.toggle;
+        langBtn.setAttribute('aria-label', s.toggleLabel);
+        closeBtn.setAttribute('aria-label', s.close);
+        prevBtn.setAttribute('aria-label', s.prev);
+        nextBtn.setAttribute('aria-label', s.next);
+        dots.forEach(function (d, i) { d.setAttribute('aria-label', s.dot(i + 1)); });
+
+        document.querySelectorAll('[data-aria-hu]').forEach(function (el) {
+          el.setAttribute('aria-label', el.getAttribute('data-aria-' + lang));
+        });
+
+        try { localStorage.setItem('kiskeszkeno-lang', lang); } catch (e) {}
+      }
+
+      langBtn.addEventListener('click', function () {
+        setLang(lang === 'hu' ? 'en' : 'hu');
+      });
+
+      /* =====================================================
+         Nagy kártya
+         ===================================================== */
+      function duration() {
+        return window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 20 : 520;
+      }
+
+      // ----- gallery -----
+      function buildGallery(list) {
+        stage.innerHTML = '';
+        dotsBox.innerHTML = '';
+        slides = [];
+        dots = [];
+        list.forEach(function (item, i) {
+          var s = document.createElement('div');
+          s.className = 'slide';
+          if (/^tex-/.test(item)) {
+            s.classList.add(item);
+          } else {
+            s.style.backgroundImage = 'url("' + item + '")';
+          }
+          stage.appendChild(s);
+          slides.push(s);
+
+          var d = document.createElement('button');
+          d.type = 'button';
+          d.className = 'dot';
+          d.setAttribute('aria-label', STR[lang].dot(i + 1));
+          d.addEventListener('click', function () { show(i); });
+          dotsBox.appendChild(d);
+          dots.push(d);
+        });
+        gallery.classList.toggle('single', list.length < 2);
+        show(0);
+      }
+
+      function show(i) {
+        if (!slides.length) return;
+        index = (i + slides.length) % slides.length;
+        slides.forEach(function (s, k) { s.classList.toggle('is-active', k === index); });
+        dots.forEach(function (d, k) { d.classList.toggle('is-active', k === index); });
+      }
+
+      prevBtn.addEventListener('click', function () { show(index - 1); });
+      nextBtn.addEventListener('click', function () { show(index + 1); });
+
+      // swipe
+      var startX = null;
+      stage.addEventListener('pointerdown', function (e) { startX = e.clientX; });
+      stage.addEventListener('pointerup', function (e) {
+        if (startX === null) return;
+        var dx = e.clientX - startX;
+        startX = null;
+        if (Math.abs(dx) > 40 && slides.length > 1) show(index + (dx < 0 ? 1 : -1));
+      });
+
+      // ----- FLIP helper: transform that makes the modal look like `rect` -----
+      function transformFor(rect, final) {
+        var sx = rect.width / final.width;
+        var sy = rect.height / final.height;
+        return 'translate(' + (rect.left - final.left) + 'px,' + (rect.top - final.top) + 'px) scale(' + sx + ',' + sy + ')';
+      }
+
+      // ----- open -----
+      function open(card, btn) {
+        if (current || closing) return;
+        current = card;
+        trigger = btn;
+
+        // mindkét nyelvi változat bekerül, a CSS csak az aktuálisat mutatja –
+        // így a nyelvváltás nyitott kártyánál is azonnal működik
+        titleEl.innerHTML = card.querySelector('h2').innerHTML;
+        textEl.innerHTML = card.querySelector('.preview').innerHTML;
+        extraEl.innerHTML = '';
+        var tpl = card.querySelector('template.extra');
+        if (tpl) extraEl.appendChild(tpl.content.cloneNode(true));
+
+        var imgs = (card.getAttribute('data-images') || '').split(',')
+          .map(function (s) { return s.trim(); }).filter(Boolean);
+        if (!imgs.length) {
+          var tex = (card.querySelector('.card-img').className.match(/tex-\w+/) || ['tex-speckle'])[0];
+          imgs = [tex];
+        }
+        buildGallery(imgs);
+
+        var from = card.getBoundingClientRect();
+
+        overlay.hidden = false;
+        modal.style.transition = 'none';
+        modal.style.transform = 'none';
+        var final = modal.getBoundingClientRect();
+        modal.style.transform = transformFor(from, final);
+        void modal.offsetWidth;                       // force reflow
+
+        card.style.visibility = 'hidden';
+        document.body.classList.add('modal-open');
+        modal.style.transition = '';
+        overlay.classList.add('open');
+        modal.style.transform = 'none';
+        modal.querySelector('.modal-scroll').scrollTop = 0;
+        closeBtn.focus({ preventScroll: true });
+      }
+
+      // ----- close -----
+      function close() {
+        if (!current || closing) return;
+        closing = true;
+        var card = current;
+        var final = modal.getBoundingClientRect();
+        var to = card.getBoundingClientRect();
+        // modal is currently untransformed, so `final` is its real rect
+        overlay.classList.remove('open');
+        modal.style.transform = transformFor(to, final);
+
+        setTimeout(function () {
+          overlay.hidden = true;
+          card.style.visibility = '';
+          document.body.classList.remove('modal-open');
+          modal.style.transform = '';
+          if (trigger) trigger.focus({ preventScroll: true });
+          current = null;
+          trigger = null;
+          closing = false;
+        }, duration());
+      }
+
+      closeBtn.addEventListener('click', close);
+      overlay.addEventListener('click', function (e) { if (e.target === overlay) close(); });
+      document.addEventListener('keydown', function (e) {
+        if (!current) return;
+        if (e.key === 'Escape') close();
+        else if (e.key === 'ArrowLeft') show(index - 1);
+        else if (e.key === 'ArrowRight') show(index + 1);
+      });
+
+      document.querySelectorAll('.card .more').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          open(btn.closest('.card'), btn);
+        });
+      });
+
+      /* ----- kezdő nyelv: a korábban választott, különben magyar ----- */
+      var saved = null;
+      try { saved = localStorage.getItem('kiskeszkeno-lang'); } catch (e) {}
+      setLang(saved === 'en' ? 'en' : 'hu');
+    })();
+  </script>
+</body>
+</html>
